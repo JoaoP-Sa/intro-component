@@ -7,8 +7,16 @@ function validation(){
         let alert = document.getElementById(`${inputs[i]}Alert`);
         let emptyMsg = document.getElementById(`${inputs[i]}Empty`);
 
-        val === "" ? alert.style.display = 'inline-block' : alert.style.display = 'none';
-        val === "" ? emptyMsg.style.display = 'block' : emptyMsg.style.display = 'none';
+        if(val === ""){
+            alert.style.display = 'inline-block'
+            emptyMsg.style.display = 'block'
+        }
+        else{
+            alert.style.display = 'none';
+            emptyMsg.style.display = 'none';
+
+            document.getElementById(inputs[i]).value = "";
+        }
     }
 
     const email = document.getElementById('email');
@@ -20,6 +28,8 @@ function validation(){
     if (email.value.match(validRegex)) {
         emailAlert.style.display = 'none';
         emailEmpty.style.display = 'none';
+
+        email.value="";
     } 
     else{
         emailAlert.style.display = 'inline-block';
