@@ -113,7 +113,7 @@ aside h1{
     margin-bottom: 0;
 }
 
-.form-box input[type=button]{
+.form-box input[type=submit]{
     width: 100%;
     padding: 14px 0 11px 0;
     color: white;
@@ -125,7 +125,7 @@ aside h1{
     cursor: pointer;
 }
 
-.form-box input[type=button]:active{
+.form-box input[type=submit]:active{
     background-color: #77e2b4;
     border: 1px solid #74c9a2;
     border-bottom: 4px solid #74c9a2;

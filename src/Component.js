@@ -34,7 +34,7 @@ function Component(props){
                         <span id="passwordAlert" className="alert">!</span>
                         <p id="passwordEmpty" className="empty-msg">Password cannot be empty</p>
 
-                        <input type="button" onClick={props.valid} id="formBtn" name="fbutton" value="CLAIM YOUR FREE TRIAL" />
+                        <input type="submit" onClick={props.valid} id="formBtn" name="fbutton" value="CLAIM YOUR FREE TRIAL" />
                         <p>By clicking the button, you are agreeing to our <strong>Terms and Services</strong></p>
                     </form>
                 </div>
